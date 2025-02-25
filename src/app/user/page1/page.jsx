@@ -2,8 +2,9 @@
 import { useState } from 'react';
 import { useRouter } from 'next/navigation';
 import StepIndicator from "@/app/components/StepIndicator";
-import env from "@beam-australia/react-env"
-const apiUrl = env("API_URL");
+const apiUrl = process.env.NEXT_PUBLIC_API_URL;
+console.log(process.env)
+console.log(process.env.NEXT_PUBLIC_API_URL)
 
 const Page = () => {
     const [email, setEmail] = useState('');
