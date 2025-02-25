@@ -3,6 +3,8 @@ import { useState } from 'react';
 import { useRouter } from 'next/navigation';
 import StepIndicator from "@/app/components/StepIndicator";
 const apiUrl = process.env.NEXT_PUBLIC_API_URL;
+console.log(process.env)
+console.log(process.env.NEXT_PUBLIC_API_URL)
 
 const Page = () => {
     const [email, setEmail] = useState('');
